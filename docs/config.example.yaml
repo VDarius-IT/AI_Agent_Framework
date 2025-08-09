@@ -1,0 +1,13 @@
+rabbitmq:
+  host: localhost
+  port: 5672
+
+agents:
+  - name: planner
+    tools: [search, summarizer]
+  - name: executor
+    tools: [python_runner]
+
+monitoring:
+  otel_exporter: http://localhost:4317
+  prometheus_port: 9090
