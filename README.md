@@ -95,7 +95,7 @@ Edit
 uvicorn orchestrator.main:app --reload
 API available at: http://localhost:8000
 ```
-⚙️ Configuration
+## ⚙️ Configuration
 All configuration is handled via config.yaml:
 ```text
 yaml
@@ -115,7 +115,7 @@ monitoring:
   otel_exporter: http://localhost:4317
   prometheus_port: 9090
 ```
-🧩 Adding a New Agent Tool
+## 🧩 Adding a New Agent Tool
 Create a new Python module in tools/:
 ```text
 python
@@ -130,7 +130,7 @@ class MyCustomTool(BaseTool):
 ```
 Register it in the config.yaml tool list.
 
-📊 Monitoring & Observability
+## 📊 Monitoring & Observability
 Tracing: OpenTelemetry exports distributed traces to Jaeger or OTLP endpoint.
 
 Metrics: Prometheus scrapes metrics from agents and orchestrator.
@@ -144,7 +144,7 @@ Copy
 Edit
 docker-compose -f monitoring/docker-compose.yml up -d
 ```
-🧠 Reinforcement Learning (PPO) for Routing
+## 🧠 Reinforcement Learning (PPO) for Routing
 The orchestrator uses Proximal Policy Optimization to determine the best agent for each task in real-time, based on:
 
 Task complexity
@@ -157,7 +157,7 @@ Resource usage
 
 Training scripts are in rl_training/.
 
-🐳 Deployment
+## 🐳 Deployment
 Local (Docker Compose)
 ```bash
 Copy
@@ -170,14 +170,14 @@ Copy
 Edit
 helm install ai-agents ./helm
 ```
-📚 API Endpoints
+## 📚 API Endpoints
 Method	Endpoint	Description
 POST	/task	Submit a new task
 GET	/agents	List active agents
 GET	/metrics	Prometheus metrics endpoint
 GET	/health	Health check
 
-🤝 Contributing
+## 🤝 Contributing
 Fork the repository
 
 Create your feature branch: git checkout -b feature/my-feature
@@ -188,10 +188,10 @@ Push to branch: git push origin feature/my-feature
 
 Open a Pull Request
 
-📜 License
+## 📜 License
 MIT License – see LICENSE for details.
 
-📬 Support
+## 📬 Support
 Issues: Use GitHub Issues for bugs & feature requests
 
 Discussions: Join the conversation in GitHub Discussions
