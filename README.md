@@ -31,7 +31,7 @@ This framework pioneers a **sophisticated approach to complex task automation** 
 
 ## 🏗️ Architecture
 
-
+```text
             ┌────────────────────────┐
             │    Client / UI / API   │
             └────────────┬───────────┘
@@ -48,6 +48,7 @@ This framework pioneers a **sophisticated approach to complex task automation** 
 │ Agent A     │    │ Agent B     │      │ Agent C     │
 │ (Tool 1+2)  │    │ (Tool 3)    │      │ (Custom)    │
 └─────────────┘    └─────────────┘      └─────────────┘
+```
 
 Monitoring Stack:
 
