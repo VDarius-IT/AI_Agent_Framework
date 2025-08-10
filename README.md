@@ -67,7 +67,7 @@ Edit
 git clone https://github.com/yourusername/autonomous-ai-agents.git
 cd autonomous-ai-agents
 ```
-2️⃣ Set up Python Environment
+### 2️⃣ Set up Python Environment
 ```bash
 Copy
 Edit
@@ -75,20 +75,20 @@ python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 ```
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 ```bash
 Copy
 Edit
 pip install -r requirements.txt
 ```
-4️⃣ Start RabbitMQ (Docker)
+### 4️⃣ Start RabbitMQ (Docker)
 ```bash
 Copy
 Edit
 docker run -d --hostname my-rabbit \
   --name some-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 ```
-5️⃣ Launch the API
+### 5️⃣ Launch the API
 ```bash
 Copy
 Edit
