@@ -44,10 +44,10 @@ This framework pioneers a **sophisticated approach to complex task automation** 
                          │ Async Messaging (RabbitMQ)
   ┌──────────────────────┼─────────────────────────┐
   ▼                      ▼                         ▼
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ Agent A │ │ Agent B │ │ Agent C │
-│ (Tool 1+2) │ │ (Tool 3) │ │ (Custom) │
-└─────────────┘ └─────────────┘ └─────────────┘
+┌─────────────┐    ┌─────────────┐      ┌─────────────┐
+│ Agent A     │    │ Agent B     │      │ Agent C     │
+│ (Tool 1+2)  │    │ (Tool 3)    │      │ (Custom)    │
+└─────────────┘    └─────────────┘      └─────────────┘
 
 Monitoring Stack:
 
